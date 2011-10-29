@@ -11,13 +11,13 @@
 
 * takes a fresh deployed Ubuntu Lucid instance to a working bare linux server.
 
-    git clone git://github.com/aussielunix/puppet-standalone-demo.git  
-    cd puppet-standalone-demo  
-    ssh-copy-id -i ~/.ssh/user_dsa.pub root@173.255.200.9  
-    cap puppet:prep HOST="173.255.200.9"  
-    cap puppet:go HOST="173.255.200.9" OPTIONS="--noop"  
-    cap puppet:go HOST="173.255.200.9"  
-    cap deploy HOST="173.255.200.9" (you'll be asked for the domain of the vhost)  
+    git clone git://github.com/aussielunix/puppet-standalone-demo.git
+    cd puppet-standalone-demo
+    ssh-copy-id -i ~/.ssh/user_dsa.pub root@173.255.200.9
+    cap puppet:prep HOST="173.255.200.9"
+    cap puppet:go HOST="173.255.200.9" OPTIONS="--noop"
+    cap puppet:go HOST="173.255.200.9"
+    cap deploy HOST="173.255.200.9" (you'll be asked for the domain of the vhost)
 
 ## TODO
 

@@ -14,27 +14,27 @@
 
 	<meta name="distribution" content="global" />
 
-	<meta name="rating" content="general" />	
+	<meta name="rating" content="general" />
 
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
 	<meta http-equiv="content-language" content="en" />
 
-		
+
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-	
+
 
 	<!--  COUNTDOWN SCRIPT -->
 
 	<script type="text/javascript" src="js/countdown-config.js"></script>
 
-	
+
 
 	<title>XHTML Template - We're on holiday</title>
 
-	
+
 
 	<script language="JavaScript" type="text/javascript">
 
@@ -88,21 +88,21 @@
 
 				axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
 
-				
+
 
 				// installed player is some revision of 6.0
 
 				// GetVariable("$version") crashes for versions 6.0.22 through 6.0.29,
 
-				// so we have to be careful. 
+				// so we have to be careful.
 
-				
+
 
 				// default to the first public version
 
 				version = "WIN 6,0,21,0";
 
-				// throws if AllowScripAccess does not exist (introduced in 6.0r47)		
+				// throws if AllowScripAccess does not exist (introduced in 6.0r47)
 
 				axo.AllowScriptAccess = "always";
 
@@ -172,7 +172,7 @@
 
 		}
 
-		
+
 
 		return version;
 
@@ -186,7 +186,7 @@
 
 		var flashVer = -1;
 
-		
+
 
 		if (navigator.plugins != null && navigator.plugins.length > 0) {
 
@@ -198,7 +198,7 @@
 
 				var descArray = flashDescription.split(" ");
 
-				var tempArrayMajor = descArray[2].split(".");			
+				var tempArrayMajor = descArray[2].split(".");
 
 				var versionMajor = tempArrayMajor[0];
 
@@ -250,7 +250,7 @@
 
 			flashVer = ControlVersion();
 
-		}	
+		}
 
 		return flashVer;
 
@@ -326,7 +326,7 @@
 
 	  if (src.indexOf('?') != -1)
 
-		return src.replace(/\?/, ext+'?'); 
+		return src.replace(/\?/, ext+'?');
 
 	  else
 
@@ -334,9 +334,9 @@
 
 	}
 
-	function AC_Generateobj(objAttrs, params, embedAttrs) 
+	function AC_Generateobj(objAttrs, params, embedAttrs)
 
-	{ 
+	{
 
 	  var str = '';
 
@@ -392,7 +392,7 @@
 
 	function AC_FL_RunContent(){
 
-	  var ret = 
+	  var ret =
 
 		AC_GetArgs
 
@@ -408,7 +408,7 @@
 
 	function AC_SW_RunContent(){
 
-	  var ret = 
+	  var ret =
 
 		AC_GetArgs
 
@@ -434,9 +434,9 @@
 
 	  for (var i=0; i < args.length; i=i+2){
 
-		var currArg = args[i].toLowerCase();    
+		var currArg = args[i].toLowerCase();
 
-		switch (currArg){	
+		switch (currArg){
 
 		  case "classid":
 
@@ -450,7 +450,7 @@
 
 		  case "src":
 
-		  case "movie":	
+		  case "movie":
 
 			args[i+1] = AC_AddExtension(args[i+1], ext);
 
@@ -550,7 +550,7 @@
 
 		  case "align":
 
-		  case "vspace": 
+		  case "vspace":
 
 		  case "hspace":
 
@@ -586,13 +586,13 @@
 
 	// -->
 
-	</script>	
+	</script>
 
 
 
 
 
-	
+
 
 </head>
 
@@ -692,7 +692,7 @@
 
 		<div class="email"><a href="mailto:info@yourcompany.com"><img src="images/mail.png" alt="email to us" /></a></div>
 
-		
+
 
 		<!-- BOTTOM RIGHT CORNER'S SOCIAL ICONS -->
 
@@ -706,11 +706,11 @@
 
 		</ul>
 
-	
+
 
 		<!-- COUNTDOWN -->
 
-		<div id="countdown"><script type="text/javascript" src="js/countdown.js"></script></div>		
+		<div id="countdown"><script type="text/javascript" src="js/countdown.js"></script></div>
 
 
 
@@ -732,7 +732,7 @@
 
 		<div id="form_input_div"><input type="text" id="textinput" onfocus="this.style.backgroundImage = 'url(images/input_bg_empty.jpg)';" onblur="if(this.value == ''){this.style.backgroundImage = 'url(images/input_bg.jpg)'}else{this.style.backgroundImage = 'url(images/input_bg_empty.jpg)'};" /></div>
 
-		</form>	
+		</form>
 
 	</div>
 
